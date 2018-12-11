@@ -1,0 +1,2 @@
+
+du -sh /var/* 2>/dev/null
