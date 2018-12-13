@@ -1,0 +1,3 @@
+# /bin/bash
+# 02 Identify and display the characteristics of the Ethernet interface
+ifconfig en0

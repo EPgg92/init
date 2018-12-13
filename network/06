@@ -1,0 +1,2 @@
+06 Get the full path of the file where the IP address of the DNS server you are using is written
+The path is /etc/resolv.conf

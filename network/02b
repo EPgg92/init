@@ -1,0 +1,3 @@
+# /bin/bash
+# 02b Indicate all the IP addresses that are part of the same subnet 
+arp -a | grep "on en0" | grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b"

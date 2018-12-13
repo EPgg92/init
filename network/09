@@ -1,0 +1,2 @@
+163.172.250.11
+#traceroute 42.fr 2>&1 | tail -n 1 | cut -d ' ' -f 3
