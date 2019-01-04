@@ -6,7 +6,7 @@
 #    By: epoggio <epoggio@student.le-101.fr>        +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2018/12/13 17:01:00 by epoggio      #+#   ##    ##    #+#        #
-#    Updated: 2018/12/13 17:06:04 by epoggio     ###    #+. /#+    ###.fr      #
+#    Updated: 2019/01/04 14:43:01 by epoggio     ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -14,57 +14,74 @@
 print_color() # $1 numQ $2 repo $3 color
 {
 	case $3 in
-		1) printf '\e[1;34m%s\e[m\n' "Question Bleu $2/$1";; # BLUE
-		2) printf '\e[1;31m%s\e[m\n' "Question Rouge $2/$1";; # RED
-		3) printf '\e[1;32m%s\e[m\n' "Question verte $2/$1";; # GREEN
+		1) printf '\e[1;34m%s\e[m\n' "Question Bleu	$2/$1 (une commande)";; # BLUE
+		2) printf '\e[1;31m%s\e[m\n' "Question Rouge	$2/$1 (un résultat de commande)";; # RED
+		3) printf '\e[1;32m%s\e[m\n' "Question verte	$2/$1 (une déduction)";; # GREEN
 		*) printf "Question $2/$1\n";;
 	esac
 }
 
 get_color() # $1 numQ $2 repo
 {
-	if
-
+	case $2 in
+		network )
+		if [[ "$1" =~ ^(06|08|11|14|15)$ ]]; then
+				echo 2
+			elif [[ "$1" =~ ^(09|13)$ ]]; then
+				echo 3
+ 			else
+				echo 1
+			fi
+			 ;;
+		system )
+		if [[ "$1" =~ ^(01|03|08|16|23)$ ]]; then
+				echo 2
+			elif [[ "$1" =~ ^(19)$ ]]; then
+				echo 3
+			else
+				echo 1
+			fi
+			 ;;
+		*) echo 0 ;;
+	esac
 }
 
 display_execute() # $1 numQ $2 repo
 {
-	#clear ;
-	color=
-	print_color $1 $2 color
-
+	clear ;
+	print_color $1 $2 $(get_color $1 $2);
+	echo ''
+	cat $2/$1
+	echo ''
 }
 
 next()
 {
+
+	display_execute $1 $2;
 	echo "Passer à la question suivante"
-	select sr in "Suivante" "Relancer"; do
+	select sr in "Suivante" "Executer"; do
     	case $sr in
-        	Suivante ) echo NON LOL ; break ;;
-        	Relancer ) next ;;
+        	Suivante ) break ;;
+			Executer ) source $2/$1 ;;
     	esac
 	done
 }
-
-
 
 main() # $1 repo
 {
 
 	for dir in network system scripts;
 	do
-		for  file in $(ls $dir);
-		do
-			echo $dir/$file;
-		done
+		if [ ! -d $dir ]; then
+			printf '\e[1;31m%s\e[m\n' "Directory $dir is missing";
+		else
+			for  file in $(ls $dir);
+			do
+				next  $file $dir;
+			done
+		fi
 	done
 }
 
-
-
-#next lol;
-
-#display_execute $1;
-
-#print_color 01 pouit $1
 main

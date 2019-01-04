@@ -1,1 +1,3 @@
+# /bin/bash
+# 20 Listez tout les utilisateurs existants sur la machine
 cut -d: -f1 /etc/passwd

@@ -1,2 +1,3 @@
-163.172.250.11
-#traceroute 42.fr 2>&1 | tail -n 1 | cut -d ' ' -f 3
+09 Trouver l’IP Publique de 42.fr
+c 'est l'ip 163.172.250.11
+j'ai utilisé `traceroute 42.fr 2>&1 | tail -n 1 | cut -d ' ' -f 3`

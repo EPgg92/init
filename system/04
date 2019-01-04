@@ -1,1 +1,3 @@
+# /bin/bash
+# 04 Quelle commande donne le temps depuis lequel votre système à été démarré la dernière fois ?
 uptime

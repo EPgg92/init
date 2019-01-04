@@ -1,9 +1,11 @@
+08 Quel fichier contient les clés RSA des machines autorisées à se connecter via SSH ?
+
 Il faut premierement creer une cle RSA avec ssh-keygen
-ssh-keygen 
+ssh-keygen
 Generating public/private rsa key pair.
-Enter file in which to save the key (/home/lol/.ssh/id_rsa): 
-Enter passphrase (empty for no passphrase): 
-Enter same passphrase again: 
+Enter file in which to save the key (/home/lol/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
 Your identification has been saved in /home/lol/.ssh/id_rsa.
 Your public key has been saved in /home/lol/.ssh/id_rsa.pub.
 The key fingerprint is:

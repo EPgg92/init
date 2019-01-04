@@ -1,3 +1,3 @@
 # /bin/bash
-# 05 Identify the IP of the DNS server that responds on the following domain: slash16.org
+# Identifiez l’IP du serveur DNS qui répond sur le domaine suivant : slash16.org
 ping -a slash16.org -t 1 | head -n 1 | grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b"

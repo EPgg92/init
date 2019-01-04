@@ -1,1 +1,3 @@
+# /bin/bash
+# 11 Quelle commande permet d’a cher l’espace disponible et utilisé sur le système d’une manière humainement compréhensible ?
 df -h

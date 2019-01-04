@@ -1,1 +1,3 @@
+# /bin/bash
+# 10 Identifiez les di érents appareils réseaux entre votre poste et le domaine slash16.org
 traceroute slash16.org

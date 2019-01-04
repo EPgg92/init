@@ -1,2 +1,2 @@
-06 Get the full path of the file where the IP address of the DNS server you are using is written
-The path is /etc/resolv.conf
+06 Récupérez le path complet du fichier dans lequel est écrit l’adresse IP du serveur DNS que vous utilisez
+Le path est /etc/resolv.conf

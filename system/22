@@ -1,1 +1,3 @@
+# /bin/bash
+# 22 Quelle commande permet d’ajouter un utilisateur local supplémentaire ?
 adduser simon

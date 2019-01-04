@@ -1,1 +1,3 @@
+# /bin/bash
+# 07 Déterminez le PID du service SSHD
 cat /var/run/sshd.pid
