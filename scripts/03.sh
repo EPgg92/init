@@ -70,9 +70,9 @@ main() # $1 repo
 			EXIT ) exit ;;
 		esac
 		for  file in $(ls $dir)
-		{
+		do
 			next $file $dir
-		}
+		done
 		exit
 	}
 }
