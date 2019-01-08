@@ -6,7 +6,7 @@
 #    By: epoggio <epoggio@student.le-101.fr>        +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2018/12/13 17:01:00 by epoggio      #+#   ##    ##    #+#        #
-#    Updated: 2019/01/08 22:16:47 by epoggio     ###    #+. /#+    ###.fr      #
+#    Updated: 2019/01/08 22:22:46 by epoggio     ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -52,8 +52,8 @@ get_color() # $1 numQ $2 repo
 
 display_execute() # $1 numQ $2 repo
 {
-	clear ;
-	print_color $1 $2 $(get_color $1 $2);
+	clear
+	print_color $1 $2 $(get_color $1 $2)
 	echo ''
 	cat $2/$1
 	echo ''
@@ -61,13 +61,14 @@ display_execute() # $1 numQ $2 repo
 
 next()
 {
-	display_execute $1 $2;
+	display_execute $1 $2
 	echo "Passer à la question suivante"
-	select sr in "Suivante" "Executer" "EXIT";;
+	select sr in "Suivante" "Executer" "EXIT"
 	do
     	case $sr in
         	Suivante ) break ;;
-			Executer ) source $2/$1 ;;
+			Executer ) source $2/$1
+			;;
 			EXIT ) exit ;;
     	esac
 	done
@@ -75,15 +76,15 @@ next()
 
 main() # $1 repo
 {
-	a="Quelle partie souhaitez-vous corriger ?"
-	echo $a
-	select dir in "network" "system" "scripts" "EXIT"; do
+	echo "Quelle partie souhaitez-vous corriger ?"
+	select dir in "network" "system" "scripts" "EXIT"
+	do
     	case $dir in
 			EXIT ) exit ;;
 		esac
-		for  file in $(ls $dir);
+		for  file in $(ls $dir)
 		do
-			next $file $dir;
+			next $file $dir
 		done
 		exit
 	done
