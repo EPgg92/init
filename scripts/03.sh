@@ -6,7 +6,7 @@
 #    By: epoggio <epoggio@student.le-101.fr>        +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2018/12/13 17:01:00 by epoggio      #+#   ##    ##    #+#        #
-#    Updated: 2019/01/04 14:43:01 by epoggio     ###    #+. /#+    ###.fr      #
+#    Updated: 2019/01/08 21:03:51 by epoggio     ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -57,30 +57,30 @@ display_execute() # $1 numQ $2 repo
 
 next()
 {
-
 	display_execute $1 $2;
 	echo "Passer à la question suivante"
-	select sr in "Suivante" "Executer"; do
+	select sr in "Suivante" "Executer" "EXIT"; do
     	case $sr in
         	Suivante ) break ;;
 			Executer ) source $2/$1 ;;
+			EXIT ) exit ;;
     	esac
 	done
 }
 
 main() # $1 repo
 {
-
-	for dir in network system scripts;
-	do
-		if [ ! -d $dir ]; then
-			printf '\e[1;31m%s\e[m\n' "Directory $dir is missing";
-		else
-			for  file in $(ls $dir);
-			do
-				next  $file $dir;
-			done
-		fi
+	a="Quelle partie souhaitez-vous corriger ?"
+	echo $a
+	select dir in "network" "system" "scripts" "EXIT"; do
+    	case $dir in
+			EXIT ) exit ;;
+		esac
+		for  file in $(ls $dir);
+		do
+			next $file $dir;
+		done
+		exit
 	done
 }
 

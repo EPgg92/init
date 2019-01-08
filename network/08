@@ -1,5 +1,7 @@
-08 Trouver chez quel hébergeur est le site de Slash16
+# 08 Trouver chez quel hébergeur est le site de Slash16
 
-####################################
-################TODO################
-####################################
+whois slash16.org
+
+# Cette commande vous permet d'obtenir les Name Server
+# ils contiennent tous *.AWSDNS* ce qui est la marque de
+# fabrique de AMAZONE WEB SERVICE (DOMAIN NAME SERVICE).
