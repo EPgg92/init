@@ -1,2 +1,6 @@
-# 01 Dans quel fichier se trouve la version installée de votre Debian ?
+#!/usr/bin/env bash
+# Dans quel fichier se trouve la version installée de votre Debian ?
+
+# Ma version de Debian est la
+# 9.6
 cat /etc/debian_version

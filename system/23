@@ -1,3 +1,9 @@
-23 Expliquez comment se connecter en tant que ce nouvelle utilisateur. (En session graphique et en session ssh)
+#!/usr/bin/env bash
+# Expliquez comment se connecter en tant que ce nouvelle utilisateur. (En session graphique et en session ssh)
 
-Avec su pour ssh et en session graphique deconnecter vous pour vous reconnecter sous l'autre session
+# Avec su pour ssh
+# Et en session graphique
+# Sous gnome en haut droite deconnectez-vous
+# Puis reconnectez-vous à l'autre session qui apparait dans la liste
+
+ssh simon@$HOSTNAME

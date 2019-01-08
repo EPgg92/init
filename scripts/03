@@ -3,8 +3,8 @@ print_color() # $1 numQ $2 repo $3 color
 {
 	case $3 in
 		1) printf '\e[1;34m%s\e[m\n' "Question Bleu	$2/$1 (une commande)";; # BLUE
-		2) printf '\e[1;31m%s\e[m\n' "Question Rouge	$2/$1 (un résultat de commande)";; # RED
-		3) printf '\e[1;32m%s\e[m\n' "Question verte	$2/$1 (une déduction)";; # GREEN
+		2) printf '\e[1;31m%s\e[m\n' "Question Rouge	$2/$1 (une déduction)";; # RED
+		3) printf '\e[1;32m%s\e[m\n' "Question verte	$2/$1 (un résultat de commande)";; # GREEN
 		*) printf "Question $2/$1\n";;
 	esac
 }

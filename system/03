@@ -1,2 +1,5 @@
-# 03 Quel est le fichier à modifier pour rendre cela permanent ?
-/etc/hostname
+#!/usr/bin/env bash
+# Quel est le fichier à modifier pour rendre cela permanent ?
+
+# le fichier à modifier pour rendre ça permanent est /etc/hostname
+echo LoveInit > /etc/hostname

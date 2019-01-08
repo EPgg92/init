@@ -1,2 +1,6 @@
-15 Faites pointer intra.42.fr sur l’adresse suivante 46.19.122.85
-`echo 46.19.122.85 intra.42.fr >> /etc/hosts`
+#!/usr/bin/env bash
+# Faites pointer intra.42.fr sur l’adresse suivante 46.19.122.85
+
+# J'utiliserai cette commande:
+echo 46.19.122.85 intra.42.fr >> /etc/hosts
+# Si tu l'utilises ça marche pas tente sudo ;)

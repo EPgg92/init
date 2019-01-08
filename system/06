@@ -1,3 +1,4 @@
-# /bin/bash
-# 06 Donnez une commande pour redémarrer le service SSH
+#!/usr/bin/env bash
+# Donnez une commande pour redémarrer le service SSH
+
 systemctl restart sshd

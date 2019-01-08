@@ -1,3 +1,4 @@
-# /bin/bash
-# 24 Quelle commande permet de lister tout les packages INSTALLÉS sur la machine ?
+#!/usr/bin/env bash
+# Quelle commande permet de lister tout les packages INSTALLÉS sur la machine ?
+
 apt list

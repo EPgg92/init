@@ -1,3 +1,4 @@
-# /bin/bash
-# 12 Déterminez la taille exacte de chaque dossier de /var d’une manière humainement compréhensible suivi du chemin de celui-ci.
+#!/usr/bin/env bash
+# Déterminez la taille exacte de chaque dossier de /var d’une manière humainement compréhensible suivi du chemin de celui-ci.
+
 du -sh /var/* 2>/dev/null

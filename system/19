@@ -1,4 +1,7 @@
-# 19 Listez les services qui se lancent automatiquement lorsque la machine boot et indiquez le nom donné à ce type de service
+#!/usr/bin/env bash
+# Listez les services qui se lancent automatiquement lorsque la machine boot et indiquez le nom donné à ce type de service
+
+'
   UNIT                                 LOAD      ACTIVE   SUB     DESCRIPTION
   accounts-daemon.service              loaded    active   running Accounts Service
   alsa-restore.service                 loaded    active   exited  Save/Restore Sound Card State
@@ -81,4 +84,7 @@ ACTIVE = The high-level unit activation state, i.e. generalization of SUB.
 SUB    = The low-level unit activation state, values depend on unit type.
 
 75 loaded units listed.
-To show all installed unit files use 'systemctl list-unit-files'.
+'
+
+# Utiliser la commande suivante pour afficher tout les paquets installés
+systemctl list-unit-files

@@ -1,3 +1,4 @@
-# /bin/bash
-# 02 Identifiez et a chez les caractéristiques de l’interface Ethernet
+#!/usr/bin/env bash
+# Identifiez et a chez les caractéristiques de l’interface Ethernet
+
 ifconfig en0

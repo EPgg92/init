@@ -1,3 +1,4 @@
-# /bin/bash
-# 17 Trouvez une commande qui, en parallèle de la session graphique, permet de se connecter en ssh sur la machine
+#!/usr/bin/env bash
+# Trouvez une commande qui, en parallèle de la session graphique, permet de se connecter en ssh sur la machine
+
 ssh $USERNAME@$HOSTNAME

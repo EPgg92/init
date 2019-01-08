@@ -1,2 +1,6 @@
-14 Quel est le fichier contenant les entrées locales DNS ?
-/etc/hosts
+#!/usr/bin/env bash
+# Quel est le fichier contenant les entrées locales DNS ?
+
+# le fichier est /etc/hosts
+
+cat /etc/hosts

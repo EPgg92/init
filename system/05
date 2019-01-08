@@ -1,3 +1,4 @@
-# /bin/bash
-# 05 Donnez une commande qui détermine l’état du service SSH
+#!/usr/bin/env bash
+# Donnez une commande qui détermine l’état du service SSH
+
 systemctl status sshd

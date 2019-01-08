@@ -1,1 +1,2 @@
-select dir in "network" "system" "scripts" "EXIT"
+#!/usr/bin/env bash
+# Réalisez un script qui permet de supprimer un user LOGUÉ sur la machine

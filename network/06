@@ -1,2 +1,5 @@
-06 Récupérez le path complet du fichier dans lequel est écrit l’adresse IP du serveur DNS que vous utilisez
-Le path est /etc/resolv.conf
+#!/usr/bin/env bash
+# Récupérez le path complet du fichier dans lequel est écrit l’adresse IP du serveur DNS que vous utilisez
+
+# Le path est /etc/resolv.conf
+cat /etc/resolv.conf

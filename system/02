@@ -1,3 +1,4 @@
-# /bin/bash
-# 02 Quelle commande permet de renommer votre système ?
-hostnamectl set-hostname lolilol
+#!/usr/bin/env bash
+# Quelle commande permet de renommer votre système ?
+
+hostnamectl set-hostname LoveInit

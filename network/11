@@ -1,2 +1,8 @@
-11 Trouvez grâce au résultat de la commande précédente le nom et l’IP du matériel qui fait le lien entre vous (réseau local) et l’extérieur
-NAT router 10.60.1.1 using traceroute
+#!/usr/bin/env bash
+# Trouvez grâce au résultat de la commande précédente le nom et l’IP du matériel
+# qui fait le lien entre vous (réseau local) et l’extérieur
+
+# Le NAT router 10.60.1.1 (trouvé en utilisant traceroute)
+# C'est l'avant dernier ip avant ns.auvergnerhonealpes.fr
+
+traceroute 8.8.8.8

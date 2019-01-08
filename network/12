@@ -1,3 +1,4 @@
-# /bin/bash
-# 12 Trouvez l’IP qui vous a été assignée par le serveur dhcp
+#!/usr/bin/env bash
+# Trouvez l’IP qui vous a été assignée par le serveur dhcp
+
 ifconfig en0 | grep "inet " |  cut -d ' ' -f 2

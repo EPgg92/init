@@ -1,3 +1,4 @@
-# /bin/bash
-# 09 Quelle commande permet de savoir quelles personnes sont connectées sur le système ?
+#!/usr/bin/env bash
+# Quelle commande permet de savoir quelles personnes sont connectées sur le système ?
+
 who

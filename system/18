@@ -1,3 +1,4 @@
-# /bin/bash
-# 18 Donnez une commande qui permet d’arrêter le service ssh
+#!/usr/bin/env bash
+# Donnez une commande qui permet d’arrêter le service ssh
+
 systemctl stop sshd

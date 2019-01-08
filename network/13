@@ -1,1 +1,7 @@
-13 Grâce a la question précédente et au reverse DNS retrouvez le nom de votre host
+#!/usr/bin/env bash
+# Grâce a la question précédente et au reverse DNS retrouvez le nom de votre host
+
+host $(network/12)
+
+# Mon host est donc 1.3.1.10.in-addr.arpa domain name pointer z1r3p1.le-101.fr
+# Enfin ça dépend du poste que j'utilise. LOL.

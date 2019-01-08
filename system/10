@@ -1,3 +1,4 @@
-# /bin/bash
-# 10 Quelle commande permet de lister les tables de partitions des disques ?
+#!/usr/bin/env bash
+# Quelle commande permet de lister les tables de partitions des disques ?
+
 lsblk

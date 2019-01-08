@@ -1,3 +1,4 @@
-# /bin/bash
-# 15. Trouvez une commande qui permet de tuer le processus de la commande en background
+#!/usr/bin/env bash
+# Trouvez une commande qui permet de tuer le processus de la commande en background
+
 kill $(jobs -p)

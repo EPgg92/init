@@ -1,5 +1,15 @@
-08 Quel fichier contient les clés RSA des machines autorisées à se connecter via SSH ?
+#!/usr/bin/env bash
+# Quel fichier contient les clés RSA des machines autorisées à se connecter via SSH ?
 
+
+
+############################
+#########à refaire##########
+############################
+
+
+
+'
 Il faut premierement creer une cle RSA avec ssh-keygen
 ssh-keygen
 Generating public/private rsa key pair.
@@ -13,3 +23,4 @@ SHA256:bAh3reoNMTXV/XLzTSu1DyYhI8MGk4DyhuYkGFVtuqo lol@lolilol
 
 le dossier par defaut est le /home/USER/.ssh/id_rsa.pub
 il peut etre autre si pendant le ssh-keygen vous en decider autrement.
+'
