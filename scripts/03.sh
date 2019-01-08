@@ -1,4 +1,4 @@
-
+ #!/bin/bash
 print_color() # $1 numQ $2 repo $3 color
 {
 	case $3 in
