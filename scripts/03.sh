@@ -6,7 +6,7 @@
 #    By: epoggio <epoggio@student.le-101.fr>        +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2018/12/13 17:01:00 by epoggio      #+#   ##    ##    #+#        #
-#    Updated: 2019/01/08 22:24:59 by epoggio     ###    #+. /#+    ###.fr      #
+#    Updated: 2019/01/08 22:30:27 by epoggio     ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -67,8 +67,7 @@ next()
 	{
     	case $sr in
         	Suivante ) break ;;
-			Executer ) source $2/$1
-			;;
+			Executer ) source $2/$1 ;;
 			EXIT ) exit ;;
     	esac
 	}
