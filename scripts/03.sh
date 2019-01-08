@@ -6,7 +6,7 @@
 #    By: epoggio <epoggio@student.le-101.fr>        +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2018/12/13 17:01:00 by epoggio      #+#   ##    ##    #+#        #
-#    Updated: 2019/01/08 22:23:55 by epoggio     ###    #+. /#+    ###.fr      #
+#    Updated: 2019/01/08 22:24:59 by epoggio     ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -78,7 +78,7 @@ main() # $1 repo
 {
 	echo "Quelle partie souhaitez-vous corriger ?"
 	select dir in "network" "system" "scripts" "EXIT"
-	do
+	{
     	case $dir in
 			EXIT ) exit ;;
 		esac
@@ -87,7 +87,7 @@ main() # $1 repo
 			next $file $dir
 		done
 		exit
-	done
+	}
 }
 
 main
