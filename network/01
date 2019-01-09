@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Récupérez la liste des interfaces réseau de la machine sans a cher aucun détail pour ces interfaces. Vraiment juste la liste des noms.
+# Récupérez la liste des interfaces réseau de la machine sans afficher aucun détail pour ces interfaces. Vraiment juste la liste des noms.
 
 ifconfig -l
