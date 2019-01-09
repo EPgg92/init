@@ -3,8 +3,7 @@
 
 kill_user() #$1 username
 {
-	killall -TERM -u $1
-	userdel -r $1
+	userdel -fr $1
 	if [ $? -eq 0 ]
 	then
 		echo "$1 est mort."
