@@ -69,6 +69,10 @@ main() # $1 repo
     	case $dir in
 			EXIT ) exit ;;
 		esac
+		if [ ! -d $dir ]; then
+			printf '\e[1;31m%s\e[m\n' "Le dossier $dir n'est pas là!" # RED
+			exit
+		fi
 		for  file in $(ls $dir)
 		do
 			next $file $dir

@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-# Réalisez un script qui a che seulement le login, le UID et le Path de chaques entrée du fichier /etc/passwd
-cat /etc/passwd | cut -d ":" -f 1,3,6
+# Réalisez un script qui affiche seulement le login, le UID et le Path de chaques entrée du fichier /etc/passwd
+
+cat /etc/passwd | cut -d ":" -f 1,3,6 | sed 's/:/\t/g'

@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
-# Identifiez les di érents appareils réseaux entre votre poste et le domaine slash16.org
+# Identifiez les différents appareils réseaux entre votre poste et le domaine slash16.org
 
 traceroute slash16.org
+
+###############################
+##### NE PAS EXECUTER ICI #####
+###############################
