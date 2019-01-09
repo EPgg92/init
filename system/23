@@ -6,6 +6,6 @@
 # Sous gnome en haut droite deconnectez-vous
 # Puis reconnectez-vous à l'autre session qui apparait dans la liste
 
-ssh simon@$HOSTNAME
+ssh simon@$HOSTNAME  -p 44445
 
 # On se connecte juste pour voir si ça marche ?
