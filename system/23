@@ -7,3 +7,5 @@
 # Puis reconnectez-vous à l'autre session qui apparait dans la liste
 
 ssh simon@$HOSTNAME
+
+# On se connecte juste pour voir si ça marche ?
